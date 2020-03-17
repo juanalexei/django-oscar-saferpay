@@ -1,9 +1,9 @@
 from django.conf.urls import url
 from oscar.core.loading import get_class
-from oscar.core.application import DashboardApplication
+from oscar.core.application import OscarDashboardConfig
 
 
-class SaferpayDashboardApplication(DashboardApplication):
+class SaferpayDashboardApplication(OscarDashboardConfig):
     name = None
     default_permissions = ['is_staff', ]
 
